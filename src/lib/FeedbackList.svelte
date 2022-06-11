@@ -1,9 +1,9 @@
 <script>
-  import { each } from 'svelte/internal';
+  import FeedbackItem from './FeedbackItem.svelte';
 
   export let feedback = [];
 </script>
 
 {#each feedback as fb (fb.id)}
-  <h3>{fb.comment}</h3>
+  <FeedbackItem item={fb} on:delete-feedback />
 {/each}
