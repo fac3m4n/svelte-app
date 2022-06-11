@@ -37,6 +37,8 @@
       };
 
       dispatch('add-feedback', newFeedback);
+
+      comment = '';
     }
   };
 </script>
